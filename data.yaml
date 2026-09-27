@@ -1,0 +1,16 @@
+# data.yaml — proyek PMLD (ALPR) | peran: AI Engineer
+# Sesuai PRD 02 §3.2 (Technical Architecture & Infrastructure)
+#
+# MODE: dataset FISIK di Google Drive (MyDrive/PMLD/dataset).
+# Dataset 750 gambar (subset dari 1.370) — dipindahkan dari proyek lama lalu
+# diselaraskan ke struktur PRD (train/val/test 70/20/10, seed 42).
+#
+# Sumber data: kaggle.com/datasets/linkgish/indonesian-plate-number-from-multi-sources
+# Split: train=525 (70%), val=150 (20%), test=75 (10%) | seed 42
+
+train: /content/drive/MyDrive/PMLD/dataset/images/train
+val: /content/drive/MyDrive/PMLD/dataset/images/val
+test: /content/drive/MyDrive/PMLD/dataset/images/test
+
+nc: 1
+names: ['license_plate']

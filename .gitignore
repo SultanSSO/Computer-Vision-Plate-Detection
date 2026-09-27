@@ -1,0 +1,24 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Video sample — distribusi privat via WhatsApp, bukan via repo
+test_video/*.mp4
+!test_video/.gitkeep
+
+# Hasil run baru user — kecuali output uji_7c (gambar & log tetap di-commit)
+output/*
+!output/uji_7c_paddleocr_sample_vidio_2.mp4/
+output/uji_7c_paddleocr_sample_vidio_2.mp4/processed_video/
+
+# Data besar lain
+dataset/
+dataset-mentah/
+dataset_ft/
+runs/
+logs/
+*.zip
+nul

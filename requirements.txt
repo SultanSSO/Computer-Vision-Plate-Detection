@@ -1,0 +1,16 @@
+ultralytics
+opencv-python
+numpy
+pandas
+jupyter
+# Pin: torch 2.14 gagal load DLL (shm.dll) di Windows py3.11; 2.5.x stabil
+torch<2.6
+# Pin: stringzilla 4.x/5.x tidak punya wheel cp311-Windows (gagal compile);
+# 3.x punya prebuilt wheel. Dependensi transitif dari albumentations <- paddleocr.
+stringzilla<4
+# Paddle: default CPU. Untuk GPU (CUDA), ganti baris di bawah dengan paddlepaddle-gpu
+# sesuai versi CUDA Anda: https://www.paddlepaddle.org.cn/install/quick
+# Pin: paddleocr<3 (API klasik PP-OCRv3) crash dengan paddlepaddle 3.x
+# (NotFoundError fused_conv2d OneDNN). paddlepaddle 2.6.x stabil untuk py3.11.
+paddlepaddle<3; sys_platform != 'darwin'
+paddleocr>=2.7,<3
