@@ -1,0 +1,41 @@
+{
+  "splits": {
+    "train": {
+      "images": 959,
+      "labels": 959,
+      "img_tanpa_label": 0,
+      "label_tanpa_img": 0,
+      "label_kosong": 0,
+      "baris_tidak_valid": 0
+    },
+    "val": {
+      "images": 274,
+      "labels": 274,
+      "img_tanpa_label": 0,
+      "label_tanpa_img": 0,
+      "label_kosong": 0,
+      "baris_tidak_valid": 0
+    },
+    "test": {
+      "images": 137,
+      "labels": 137,
+      "img_tanpa_label": 0,
+      "label_tanpa_img": 0,
+      "label_kosong": 0,
+      "baris_tidak_valid": 0
+    }
+  },
+  "errors": [],
+  "sumber": "linkgish/indonesian-plate-number-from-multi-sources",
+  "seed": 42,
+  "ratios": [
+    0.7,
+    0.2,
+    0.1
+  ],
+  "subset": null,
+  "total_gambar": 1370,
+  "multi_bbox": 284,
+  "total_bbox": 2124,
+  "data_yaml": "C:\\Users\\Sultan\\plat-deteksi\\dataset-pmld\\data.yaml"
+}

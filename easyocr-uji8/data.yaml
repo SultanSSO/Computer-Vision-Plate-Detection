@@ -1,0 +1,15 @@
+# data.yaml — proyek PMLD_FT (ALPR) | peran: AI Engineer
+# Migrasi dari MyDrive/PMLD → MyDrive/PMLD_FT (lihat prd_migrasi_pmld.md)
+#
+# MODE: dataset FISIK di Google Drive (MyDrive/PMLD_FT/dataset).
+# Dataset 750 gambar (train/val/test 70/20/10, seed 42).
+#
+# Sumber data: kaggle.com/datasets/linkgish/indonesian-plate-number-from-multi-sources
+# Split: train=525 (70%), val=150 (20%), test=75 (10%) | seed 42
+
+train: /content/drive/MyDrive/PMLD_FT/dataset/images/train
+val: /content/drive/MyDrive/PMLD_FT/dataset/images/val
+test: /content/drive/MyDrive/PMLD_FT/dataset/images/test
+
+nc: 1
+names: ['license_plate']
